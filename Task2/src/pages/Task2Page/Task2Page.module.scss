@@ -1,0 +1,133 @@
+.container {
+	color: rgb(72, 97, 55);
+	font-family: 'Rubik Wet Paint', system-ui;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #a58c7e;
+	gap: 100px;
+	h1 {
+		font-size: 50px;
+		font-weight: 700;
+		font-family: 'Rubik Puddles', serif;
+		color: rgb(214, 212, 206);
+	}
+	.blockTodo {
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 1000px;
+		background-color: rgb(214, 212, 206);
+
+		.todoListAndInput {
+			box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.19);
+			width: 90%;
+			background-color: white;
+			.form {
+				height: 50px;
+				border-bottom: 2px solid rgb(214, 212, 206);
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.input {
+					color: rgb(72, 97, 55);
+					font-family: 'Rubik Wet Paint', system-ui;
+					padding-left: 30px;
+					width: 100%;
+					border: none;
+				}
+
+				.button {
+					color: rgb(72, 97, 55);
+					font-family: 'Rubik Wet Paint', system-ui;
+					font-size: 20px;
+					width: 35%;
+					border: none;
+					margin-right: 30px;
+					border-radius: 8px;
+					height: 40px;
+					transition:
+						transform 0.2s ease,
+						color 0.2s ease,
+						background-color 0.2s ease;
+					background-color: rgb(214, 212, 206);
+					&:hover {
+						color: rgb(214, 212, 206);
+						background-color: rgb(72, 97, 55);
+					}
+					&:active {
+						transform: scale(0.97);
+					}
+				}
+			}
+			.todoList {
+				height: 400px;
+				overflow-y: auto;
+				.item {
+					cursor: pointer;
+					padding-left: 30px;
+					border-bottom: 1px solid rgb(214, 212, 206);
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					height: 50px;
+					&.active {
+						text-decoration: line-through;
+						color: grey;
+					}
+					.svgContainer {
+						width: 50px;
+
+						padding-right: 50px;
+						.svg {
+							width: 100%;
+							cursor: pointer;
+
+							&:hover path {
+								fill: rgb(168, 20, 20);
+							}
+							path {
+								fill: grey;
+								width: 50px;
+								transition: fill 0.2s ease;
+							}
+						}
+					}
+				}
+			}
+		}
+		.filterButtons {
+			display: flex;
+			gap: 20px;
+			padding: 10px 0 10px 0px;
+			button {
+				color: rgb(72, 97, 55);
+				font-family: 'Rubik Wet Paint', system-ui;
+				font-size: 20px;
+				color: rgb(214, 212, 206);
+				width: 55%;
+				border: none;
+				border-radius: 8px;
+				height: 30px;
+				transition:
+					transform 0.2s ease,
+					color 0.2s ease,
+					background-color 0.2s ease;
+				background-color: rgb(72, 97, 55);
+				&:hover {
+					color: rgb(72, 97, 55);
+					background-color: #a58c7e;
+				}
+				&:active {
+					transform: scale(0.97);
+				}
+			}
+		}
+	}
+}
