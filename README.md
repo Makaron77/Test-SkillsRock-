@@ -1,7 +1,9 @@
 [Vanilla JS assessment.pdf](https://github.com/user-attachments/files/17666964/Vanilla.JS.assessment.pdf)
 <br/>
 Задание1  и 4 в файлах: Task1.js, Task2.js
+<br/>
 Просмотреть задание 2 и 3: 
+<br/>
 cd Tasks234 && npm run dev
 
 ВАЖНО!!! (во 2 задании лично у меня запросы не отправляются без VPN, в этом случае нужно установить и запустить VPN расширение браузера)
