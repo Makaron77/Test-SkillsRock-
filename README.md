@@ -1,4 +1,5 @@
 [Vanilla JS assessment.pdf](https://github.com/user-attachments/files/17666964/Vanilla.JS.assessment.pdf)
+<br/>
 Задание1  и 4 в файлах: Task1.js, Task2.js
 Просмотреть задание 2 и 3: 
 cd Tasks234 && npm run dev
