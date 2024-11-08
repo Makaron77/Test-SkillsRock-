@@ -1,0 +1,23 @@
+.button{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	 font-family: "Rubik 80s Fade", system-ui;
+			display: inline-block;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			border-radius: 8px;
+			text-decoration: none;
+			color: rgb(5, 4, 4);
+			background-color: rgb(193, 241, 180);
+			width: 150px;
+			height: 40px;
+			transition: transform 0.3s ease;
+			&:hover{
+				background-color: rgb(176, 189, 170);
+			}
+			&:active{
+				transform: scale(0.97);
+			}
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Task2Page.module.scss';
 import { ITodo } from '../../types/types';
 import { message } from 'antd';
+import ButtonBack from '../../components/ButtonBack/ButtonBack';
 export default function Task2Page() {
 	const [newTodo, setNewTodo] = useState<string>('');
 	const [todos, setTodos] = useState<ITodo[]>([]);
@@ -40,6 +41,7 @@ export default function Task2Page() {
 
 	return (
 		<div className={styles.container}>
+			<ButtonBack />
 			<h1>Задание 2</h1>
 			<div className={styles.blockTodo}>
 				<div className={styles.todoListAndInput}>
@@ -58,7 +60,6 @@ export default function Task2Page() {
 							<div
 								className={`${styles.item} ${todo.check ? styles.active : ''}`}
 								key={index}
-								
 							>
 								<p onClick={() => toggleCheck(index)}>{todo.text}</p>
 								<div className={styles.svgContainer}>
