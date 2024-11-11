@@ -30,6 +30,7 @@ console.log(calc.add());
 console.log(calc.subtract());
 console.log(calc.multiply());
 console.log(calc.divide());
+//*Пример использования: различные подсчеты в приложениях.
 
 //! 2. Система управления библиотекой
 
@@ -60,17 +61,15 @@ class Library {
 		});
 	}
 	returnBook(isbn) {
-	this.books.find(book => {
-		if (book.isbn === isbn && book.status === false) {
-			book.status = true;
-		}
-	});
+		this.books.find(book => {
+			if (book.isbn === isbn && book.status === false) {
+				book.status = true;
+			}
+		});
 	}
-listAvailableBooks() {
-return this.books.filter(book => book.status === true);
-}
-
-
+	listAvailableBooks() {
+		return this.books.filter(book => book.status === true);
+	}
 }
 
 const library = new Library();
@@ -80,6 +79,7 @@ const book2 = new Book('Книга1', 'Пушкин1', '12368');
 library.addBook(book1);
 library.addBook(book2);
 library.borrowBook('12345');
-  library.returnBook('12345');
+library.returnBook('12345');
 console.log(library.listAvailableBooks());
 
+//* Пример использования: библиотечная система учёта книг.
